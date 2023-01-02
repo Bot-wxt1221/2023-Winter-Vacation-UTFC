@@ -12,60 +12,78 @@ $\text{SWOI 2023 Winter Vacation Unhappy Touching Fish Comptition Div.2 Round 1}
 
 <div STYLE="page-break-after: always;"></div>
 
-| 题目名称    | 数列           | HDS学计算   | 方框         | 二刺螈的斗争         |
+| 题目名称    | 超级反复听 | HDS学计算   | 方框         | 二刺螈的斗争         |
 | ------- | ------------ | -------- | ---------- | -------------- |
 | 题目类型    | 传统型          | 传统型      | 传统型        | 传统型            |
-| 可执行文件名  | sequence     | calc     | square     | worldintwo     |
-| 输入文件名   | sequence.in  | calc.in  | square.in  | worldintwo.in  |
-| 输出文件名   | sequence.out | calc.out | square.out | worldintwo.out |
-| 每个测试点时限 | 200ms        | 200ms    | 200ms      | 1s             |
+| 可执行文件名  |     recording | calc     | square     | worldintwo     |
+| 输入文件名   | recording.in  | calc.in  | square.in  | worldintwo.in  |
+| 输出文件名   | recording.out | calc.out | square.out | worldintwo.out |
+| 每个测试点时限 | 500ms        | 200ms    | 200ms      | 1s             |
 | 内存限制    | 16MB         | 16MB     | 64MB       | 256MB          |
 | 测试点数目   | 10           | 10       | 10         | 10             |
 | 测试点是否等分 | 是            | 是        | 是          | 是              |
-| 提交文件程序名 | sequence.cpp | calc.cpp | square.cpp | worldintwo.cpp |
+| 提交文件程序名 | recording.cpp | calc.cpp | square.cpp | worldintwo.cpp |
 | G++编译选项 | -O0          | -O0      | -O0        | -O0            |
 
 <div STYLE="page-break-after: always;"></div>
 
-# 数列 sequence
+# 超级反复听
 
 ## 题目描述
 
-已知
-
-$$
-F_n=\frac{1}{\sqrt{5}}\left[\left(\frac{\sqrt{5}+1}{2}\right)^{n}-\left(\frac{\sqrt{5}-1}{2}\right)^{n}\right]
-$$
-
-请你求出 $F_n \bmod 10^9 + 7$ 的值。
+由于lxl听不懂他的OI教练hs讲课，于是他准备将一节课录下来反复听，已知一节课hs会讲 $n$ 个知识点，第 $i$ 个知识点hs讲了 $M_i\left(M_i\leq q\right)$ 分钟。lxl的复读机可以将所有知识点录下来，他计划复习 $m$ 次，但是由于复读机特殊现在，每次复习都只能听其中一个知识点或者直接摆烂不听(不听也算一次复习)，他想 $m$ 次复习后总共只听了 $k$ 分钟。他想预估自己能有多少种听课方案，但是计划不如变化，lxl现在不知道自己有多少时间复习，所以我们将共只听了 $k$ 分钟的方案数记作 $ans_k$ ，由于最后时间可能会很长，你需要求 $k\leq q$ 时的 $ans_k\bmod 998244353$ 。
 
 ## 输入格式
 
-一行一个正整数 $n$ 。
+第一行: 两个整数 $n,m,q$ 。
+
+第二行: $n$ 个整数: 第 $i$ 个表示 $M_i$ 。
 
 ## 输出格式
 
-输出一行一个整数表示答案。
+仅一行 $q+1$个整数:  第 $k$ 个表示 $ans_k\bmod 998244353$ 。
 
 ## 样例 #1
 
 ### 样例输入 #1
 
 ```
-5
+2 3 10
+2 5
 ```
 
 ### 样例输出 #1
 
 ```
-5
+1 0 3 0 3 3 1 6 0 3 3
+```
+
+## 样例 #2
+
+### 样例输入 #2
+
+```
+5 1145141919810 10
+1 2 6 8 9
+```
+
+### 样例输出 #2
+
+```
+1 155646919 295977135 515358527 175111193 926420910 949606408 889582468 788775185 306618380 43071532
 ```
 
 ## 提示
 
+此题为“听复反”续集，初一应该做过。
+
 【数据范围】
 
-对于 $100\%$ 的数据， $1\le n < 2^{63}$ 。
+对于 $40\%$ 的数据， $1\leq n \leq 10^6,1\leq M_i\leq q\leq500,1\leq m\leq 10$ 。
+
+对于另外 $20\%$ 的数据， $1\le n < 10^6,1\leq M_i\leq q\leq 50,1\leq m\leq 10^{18}$ 。
+
+对于 $100\%$ 的数据， $1\leq n \leq 10^6,1\leq M_i\leq q\leq 500,1\leq m\leq 10^{18}$ 。
 
 <div STYLE="page-break-after: always;"></div>
 
