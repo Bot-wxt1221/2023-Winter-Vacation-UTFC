@@ -5,8 +5,8 @@ int a[100005][10];
 int main(){
 	#ifdef ONLINE_JUDGE
 	#else
-	// freopen(".in","r",stdin);
-	// freopen(".out","w",stdout);
+//	 freopen("f9.in","r",stdin);
+//	 freopen("f9.out","w",stdout);
 	#endif
     int n=read();
     bool zero=0;
@@ -16,16 +16,17 @@ int main(){
             zero=1;
         }
     }
-    if(zero){
-        for(int i=1;i<=n;i++){
-            printf("%d ",a[i][0]);
-        }
-    }
+
     for(int i=1;i<=n;i++){
         for(int j=i+1;j<=n;j++){
             if(a[i][0]<a[j][0]){
                 std::swap(a[i][0],a[j][0]);
             }
+        }
+    }
+    if(zero){
+        for(int i=1;i<=n;i++){
+            printf("%d ",a[i][0]);
         }
     }
     for(int m=1;;m=(!m)){

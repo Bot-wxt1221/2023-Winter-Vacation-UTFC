@@ -67,8 +67,8 @@ void tarjan(int now){
 int main(){
 	#ifdef ONLINE_JUDGE
 	#else
-	// freopen(".in","r",stdin);
-	// freopen(".out","w",stdout);
+//	 freopen("e.in","r",stdin);
+//	 freopen("e.out","w",stdout);
 	#endif
     int n=read(),m=read();
     for(int i=1;i<=n;i++){
@@ -89,7 +89,8 @@ int main(){
     }
     for(int i=1;i<=n;i++){
         for(int j=fir[i];j!=-1;j=nxt[j]){
-            add2(col[i],col[v[j]]);            
+        	if(col[i]!=col[v[j]])
+            	add2(col[i],col[v[j]]);            
         }
     }
     for(int i=1;i<=co;i++){
