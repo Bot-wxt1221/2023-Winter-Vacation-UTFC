@@ -39,7 +39,6 @@ struct POL{
 }pol;
 
 int main(){
-    // freopen("C:\\Users\\Administrator\\Desktop\\OI\\recording10.in","r",stdin);
     register int i;
     int n=read();
     long long m=read();

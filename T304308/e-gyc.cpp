@@ -58,8 +58,8 @@ void tarjan(int u){
 }
 
 int main(){
-	freopen("e.in","r",stdin);
-	freopen("e.out","w",stdout);
+	// freopen("e.in","r",stdin);
+	// freopen("e.out","w",stdout);
     register int i,u,v,ans=0;
     int n=read();
     int m=read();
