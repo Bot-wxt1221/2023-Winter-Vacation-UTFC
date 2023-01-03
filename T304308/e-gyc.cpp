@@ -78,8 +78,10 @@ int main(){
 
     for(i=1;i<=n;++i)
         for(u=head1[i];~u;u=e1[u].next){
-            addEdge(color[i],color[e1[u].to],head2,e2,tot2);
-            ++d[color[e1[u].to]];
+        	if(color[i]!=color[e1[u].to]){
+            	addEdge(color[i],color[e1[u].to],head2,e2,tot2);
+           	    ++d[color[e1[u].to]];
+        	}
         }
 
     for(i=1;i<=color_now;++i)
