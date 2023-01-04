@@ -18,6 +18,8 @@ int read(){
 	return f*x;
 }
 signed main(){
+//	freopen("f4.in","r",stdin);
+//	freopen("f4.out","w",stdout);
     int n;
     double m;
     n=read();
@@ -33,6 +35,6 @@ signed main(){
         _max=std::max(_max,m*c[i]/c[i+1]);
         m=_max;
     }
-    printf("%lld",(int)m);
+    printf("%lld",(int)(floor(m)));
     return 0;
 }
