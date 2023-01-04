@@ -18,7 +18,8 @@ int read(){
 	return f*x;
 }
 signed main(){
-    int n,m;
+    int n;
+    double m;
     n=read();
     m=read();
     for(int i=1;i<=n;i++){
@@ -27,11 +28,11 @@ signed main(){
         c[i]=read();
     }
     for(int i=1;i<n;i++){
-        int _max=((floor(m*a[i]/100))*100)/a[i+1];
+        double _max=m*a[i]/a[i+1];
         _max=std::max(m,_max);
-        _max=std::max(_max,(int)((floor(m*c[i]/100))*100)/c[i+1]);
+        _max=std::max(_max,m*c[i]/c[i+1]);
         m=_max;
     }
-    printf("%lld",m);
+    printf("%lld",(int)m);
     return 0;
 }
