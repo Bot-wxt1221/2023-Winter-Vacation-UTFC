@@ -19,7 +19,10 @@ signed main(){
     	cha[l]+=a;
     	cha[l+1]+=(b-a);
     	cha[r+1]-=(b+last);
-    	cha[r+2]=last;
+    	cha[r+2]+=last;
+    	if(l==7||l+1==7||r+1==7||r+2==7){
+    		printf("%d",l);
+		}
 	}
 	for(int i=1;i<=n;i++){
 		cha[i]+=cha[i-1];

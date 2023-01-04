@@ -93,13 +93,15 @@ int main(){
             	add2(col[i],col[v[j]]);            
         }
     }
+    int ans=0;
     for(int i=1;i<=co;i++){
         if(in[i]==0){
             b.push(i);
             dp[i]=w2[i];
+            ans=std::max(ans,dp[i]);
         }
     }
-    int ans=0;
+    ans=0;
     while(b.size()>0){
         int now=b.front();
         b.pop();
