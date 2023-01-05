@@ -18,7 +18,7 @@ int main(){
     a.push(n);
     ans[n]=1;
     for(int i=n-1;i>=1;i--){
-        while(a.size()>0&&h[a.top()]<=h[i]){
+        while(a.size()>0&&h[a.top()]<h[i]){
             a.pop();
         }
         ans[i]=ans[a.top()]+1;
