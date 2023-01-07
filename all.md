@@ -12,18 +12,18 @@ $\text{SWOI 2023 Winter Vacation Unhappy Touching Fish Comptition Div.2 Round 1}
 
 <div STYLE="page-break-after: always;"></div>
 
-| 题目名称    | 超级反复听 | HDS学计算   | 方框         | 二刺螈的斗争         |
-| ------- | ------------ | -------- | ---------- | -------------- |
-| 题目类型    | 传统型          | 传统型      | 传统型        | 传统型            |
-| 可执行文件名  |     recording | calc     | square     | worldintwo     |
+| 题目名称    | 超级反复听         | HDS学计算   | 方框         | 二刺螈的斗争         |
+| ------- | ------------- | -------- | ---------- | -------------- |
+| 题目类型    | 传统型           | 传统型      | 传统型        | 传统型            |
+| 可执行文件名  | recording     | calc     | square     | worldintwo     |
 | 输入文件名   | recording.in  | calc.in  | square.in  | worldintwo.in  |
 | 输出文件名   | recording.out | calc.out | square.out | worldintwo.out |
-| 每个测试点时限 | 500ms        | 200ms    | 200ms      | 1s             |
-| 内存限制    | 16MB         | 16MB     | 64MB       | 256MB          |
-| 测试点数目   | 10           | 10       | 10         | 10             |
-| 测试点是否等分 | 是            | 是        | 是          | 是              |
+| 每个测试点时限 | 500ms         | 200ms    | 200ms      | 1s             |
+| 内存限制    | 16MB          | 16MB     | 64MB       | 256MB          |
+| 测试点数目   | 10            | 10       | 10         | 10             |
+| 测试点是否等分 | 是             | 是        | 是          | 是              |
 | 提交文件程序名 | recording.cpp | calc.cpp | square.cpp | worldintwo.cpp |
-| G++编译选项 | -O0          | -O0      | -O0        | -O0            |
+| G++编译选项 | -O0           | -O0      | -O0        | -O0            |
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -111,7 +111,7 @@ HDS才不看这么大的数字，请求该数对 $100000921$的取模结果。
 
 ## 输出格式
 
-输出一个对 $100000921$ 去模的整数，表示 $F_i$ 。
+输出一个对 $100000921$ 去模的整数，表示 $\sum_{i=1}^{n} F_i$ 。
 
 ## 样例 #1
 
@@ -232,7 +232,7 @@ C神，亦名门萨，本为机房之神，曾集评测只因和图灵所剩之�
 
 ## 提示
 
-此题OI量极大，请用快速读入。
+此题IO量极大，请用快速读入。
 
 【数据范围】
 
